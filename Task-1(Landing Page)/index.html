@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <section class="header" id="h">
+        <nav>
+            <a href="index.html"><img src="images/jssstulogo.png" class="image1"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#h">Home</a></li>
+                    <li><a href="#a">About</a></li>
+                    <li><a href="#c">Course</a></li>
+                    <li><a href="#con">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>WELCOME TO <br>JSS SCIENCE AND TECHNOLOGY UNIVERSITY</h1>
+            <p>Science and Technology for Better Living</p>
+            <a href="#a" class="hero-btn">Know More</a>
+        </div>
+    </section>
+    <section class="campus" id="a">
+        <h1>About Our Campus</h1>
+        <div class="row">
+            <div class="campus-div">
+                <img src="images/campus.png" alt="">
+            </div>
+            <div class="campus-div" id="second-col">
+                <div class="coll">
+                    <h2>SRI JAYACHAMARAJENDRA COLLEGE OF ENGINEERING</h2>
+                    <p>Established in 1963 as SJCE has 12 departments in engineering, a Master of Computer Applications
+                        department. It was affiliated to the VTU, Belgaum, but now it's a Constituent College of JSS
+                        Science
+                        and Technology University from 2016-2017 academic year. SJCE is accredited by the AICTE.</p>
+                </div>
+                <div class="coll">
+                    <h2>JSS SCIENCE AND TECHNOLOGY UNIVERSITY</h2>
+                    <p>JSS STU is the second University established by JSS Mahavidyapeetha, besides the JSS Academy of
+                        Higher Education and Research a health sciences focused deemed university at Mysuru. JSS STU
+                        plays a
+                        key role in providing high quality skilled manpower in the fields of Science, Engineering &
+                        Technology and Management to transform the society through research and innovation. JSS STU is
+                        committed to deliver quality education at all levels and provide opportunities for aspiring
+                        youth to
+                        meet the global needs of society in every sector.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="course" id="c">
+        <h1>Courses We Offer</h1>
+        <p>Lorem ipsum </p>
+        <div class="row">
+
+            <div class="course-col">
+                <h3>Bachelor of Technology</h3>
+                <p>JSS Science and Technology University offers B.Tech programs across various engineering disciplines,
+                    providing students with a solid foundation in technical skills and practical knowledge. These
+                    courses are designed to prepare graduates for diverse careers in the engineering sector.</p>
+            </div>
+            <div class="course-col">
+                <h3>Master of Technology</h3>
+                <p>The M.Tech program at JSS Science and Technology University provides advanced knowledge and
+                    specialization in various engineering fields, emphasizing research and practical application. This
+                    course is designed to prepare graduates for higher-level technical roles and research opportunities
+                    in their chosen disciplines.</p>
+            </div>
+
+            <div class="course-col">
+                <h3>Bachelor of Science</h3>
+                <p>The B.Sc programs at JSS STU cover a range of scientific disciplines, including physics, chemistry,
+                    and mathematics. These courses aim to build a strong theoretical base and practical skills for
+                    students pursuing careers or further studies in science.</p>
+            </div>
+            <div class="course-col">
+                <h3>Master of Science</h3>
+                <p>JSS STU's M.Sc programs offer advanced study in fields such as physics, chemistry, and mathematics,
+                    focusing on in-depth knowledge and research skills. These courses prepare graduates for careers in
+                    research, academia, or specialized industry roles.</p>
+            </div>
+            <div class="course-col">
+                <h3>Bachelor of Computer Applications</h3>
+                <p>The BCA program at JSS STU provides a comprehensive education in computer applications, including
+                    software development, database management, and networking. This course equips students with the
+                    skills needed for a career in information technology.</p>
+            </div>
+            <div class="course-col">
+                <h3>Master of Computer Applications</h3>
+                <p>JSS STU’s MCA program is designed to offer advanced knowledge in computer science and applications,
+                    with a focus on software development, system design, and project management. It prepares students
+                    for higher-level roles in the IT industry.</p>
+            </div>
+            <div class="course-col">
+                <h3>Master of Business Administration</h3>
+                <p>The MBA program at JSS STU focuses on developing leadership and management skills across various
+                    business domains. It equips students with strategic thinking and practical knowledge to excel in
+                    managerial and executive positions.</p>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="con">
+        <h1>Contact Us</h1>
+        <div class="row">
+            <div class="contact-col">
+                <i class="fa fa-brands fa-instagram"></i>
+                <p>Instagram</p>
+            </div>
+            <div class="contact-col">
+                <i class="fa fa-solid fa-phone"></i>
+                <p>Phone Number: <a href="tel:+08212548285"> 0821-2548285</p></a>
+            </div>
+            <div class="contact-col">
+                <i class="fa fa-regular fa-envelope"></i>
+                <p>Email ID: <a href="mailto:enquire@jssstuniv.in">enquire@jssstuniv.in</a></p>
+            </div>
+            <div class="contact-col">
+                <i class="fa fa-brands fa-linkedin"></i>
+                <p><a
+                        href="https://www.linkedin.com/school/jss-science-and-technology-university/posts/?feedView=all">LinkedIn</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+        function openMenu() {
+            navLinks.style.right = "0px"
+        }
+    </script>
+</body>
+
+</html>
